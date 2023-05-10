@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact{
+    width: 100%;
+    height: 100%;
+    background: url(../assests/blackcubes.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.container {
+    display: flex;
+    margin-left: 30px;
+  }
+  
+  .text-zone {
+    margin-top: 30px;
+    flex-basis: 50%;
+  }
+  
+  .text-zone h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: aliceblue;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: 2rem 0;
+  }
+  
+  .contact-form input[type='text'],
+  .contact-form input[type='email'] {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    background-color: #f2f2f2;
+  }
+  .contact-form textarea{
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    background-color: #f2f2f2;
+  }
+  
+  .contact-form input[type='submit'] {
+    background-color: transparent;
+    color: blue;
+    padding: 1rem 2rem;
+    border: blue solid 3px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .contact-form input[type='submit']:hover {
+    background-color: blue;
+    color: white;
+    box-shadow: 0 0 20px 10px blue;
+    transition: all 1s;
+  }
+  
+  .map {
+    margin-top: 30px;
+   flex-basis: 50%;
+    height:100%;
+  }
+  
+  .box {
+    margin: 40px;
+    width: 70%;
+    height: 400px;
+    
+  }
+.contact-form ul {
+    list-style-type: none;
+}
+.location{
+    height: 100%;
+    width: 100%; 
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 5px blue;
+}
+@media screen and (max-width: 1000px){
+    .container {
+        flex-direction: column;
+      }
+      
+      .text-zone {
+        margin-top: 20px;
+        flex-basis: 60%;
+      }
+      
+      .text-zone h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: aliceblue;
+      }
+      
+      .contact-form {
+        max-width: 2500px;
+        margin: 1rem 0;
+      }
+      
+      .contact-form input[type='text'],
+      .contact-form input[type='email'] {
+        width: 70%;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        border: none;
+        font-size: 0.6rem;
+        background-color: #f2f2f2;
+      }
+      .contact-form textarea{
+        width: 70%;
+        height: 80px;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        border: none;
+        border-radius: 4px;
+        font-size: 0.6rem;
+        background-color: #f2f2f2;
+      }
+      
+      .contact-form input[type='submit'] {
+        background-color: transparent;
+        color: blue;
+        padding: 0.5rem 1rem;
+        border: blue solid 3px;
+        font-size: 0.8rem;
+        cursor: pointer;
+      }
+      
+      .contact-form input[type='submit']:hover {
+        background-color: blue;
+        color: white;
+        box-shadow: 0 0 20px 10px blue;
+        transition: all 1s;
+      }
+      
+      .map {
+        margin-top: 30px;
+       flex-basis: 40%;
+        height:100%;
+      }
+      .box {
+        margin: 15px;
+        width: 50%;
+        height: 200px;
+      
+      }
+}
