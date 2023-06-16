@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink,Link } from 'react-router-dom';
 import './navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope, faUser } from '@fortawesome/free-regular-svg-icons';
-import { faGithub, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import logo from '../assests/logo-g.png'
 
+
+
+
 function Navbar () {
+  const [active,setActive]=useState(false);
+  window.addEventListener("scroll",()=>{
+    if(window.scrollY>10){
+      setActive(true)
+    }else{
+      setActive(false)
+    }
+   })
   return (
-    <div className='sidebar'>
+    <div className={`${active===true?"sidebarscroll":"sidebar"}`}>
       <div className='logo'>
         <Link to="/">
         <img src={logo} alt='logo' /> 
@@ -29,7 +40,7 @@ function Navbar () {
         <ul>
           <li><a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/gokulakrishnan-k-ab7712169/'><FontAwesomeIcon icon={faLinkedin}/></a></li>
           <li><a target='_blank' rel='noreferrer' href='https://github.com/Gokulcoder-99'><FontAwesomeIcon icon={faGithub}/></a></li>
-          <li><a target='_blank' rel='noreferrer' href='gokulkrishnan@gmail.com'><FontAwesomeIcon icon={faGoogle} /></a></li>
+          {/* <li><a target='_blank' rel='noreferrer' href='/contact'><FontAwesomeIcon icon={faGoogle} /></a></li> */}
         </ul>
       </div>
     </div>

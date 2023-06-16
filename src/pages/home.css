@@ -47,6 +47,9 @@
     border-radius: 20px;
     margin-top: 15px;
 }
+.anchor-min ul{
+    display: none;
+}
 @media screen and (max-width: 1000px) {
     .home {
       flex-direction: column-reverse;
@@ -72,6 +75,9 @@
       margin: 20px auto;
       border: 5px solid blue;
       box-shadow:blue 0px 0px 20px 5px;
+    }
+    .anchor-min ul{
+        display: none;
     }
 }
 @media screen and (max-width:700px){
@@ -106,4 +112,16 @@
         border: 5px solid blue;
         box-shadow:blue 0px 0px 40px 10px;
       }
+      .anchor-min{
+        margin: 10px;
+      }
+      .anchor-min ul {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        list-style-type:none ;
+     }
+     .anchor-min ul li{
+       font-size: 25px;
+     }
 }
