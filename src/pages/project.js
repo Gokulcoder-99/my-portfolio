@@ -49,7 +49,7 @@ function Project() {
       <div className='card'>
         <img className='projectimage' src={webscraper} alt='food token generator'/>
         <div className='detail'>
-          <h2>Webnscraper(HACKATHON)</h2>
+          <h2>Webscraper(HACKATHON)</h2>
           <p>Scrap product data from E-Commerce websites.<br/>
              The scrapping of the data should be done for the following Websites.<br/>
               → Flipkart<br/>
