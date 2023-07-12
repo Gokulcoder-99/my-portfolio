@@ -20,7 +20,7 @@ function Navbar () {
     }
    })
   return (
-    <div className={`${active===true?"sidebarscroll":"sidebar"}`}>
+    <div className={active===true?"sidebarscroll":"sidebar"}>
       <div className='logo'>
         <Link to="/">
         <img src={logo} alt='logo' /> 
@@ -40,7 +40,6 @@ function Navbar () {
         <ul>
           <li><a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/gokulakrishnan-k-ab7712169/'><FontAwesomeIcon icon={faLinkedin}/></a></li>
           <li><a target='_blank' rel='noreferrer' href='https://github.com/Gokulcoder-99'><FontAwesomeIcon icon={faGithub}/></a></li>
-          {/* <li><a target='_blank' rel='noreferrer' href='/contact'><FontAwesomeIcon icon={faGoogle} /></a></li> */}
         </ul>
       </div>
     </div>

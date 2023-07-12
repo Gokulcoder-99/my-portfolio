@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 .about{
-    display: flex;
     background: url(../assests/darkimg.jpg) no-repeat center center fixed;
     background-size: cover;
     color:aliceblue;
@@ -14,31 +13,31 @@
     font-style: italic;
 }
 .explore{
-    flex-basis: 50%;
     margin: 10px;
 }
 .explore h1{
+    display: flex;
+    justify-content: center;
     text-decoration: underline;
 }
 
-.skill{
-    flex-basis: 50% ;
-    text-align: center;
-}
 .skill h1{
+    display: flex;
+    justify-content: center;
     margin: 20px;
     text-decoration: underline;
 }
 .skill ul {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     list-style-type: none;
     gap:1.5rem;
+    
 }
 .skill ul li img {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
 }
 .explore h1{
     margin: 10px;

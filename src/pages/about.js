@@ -8,8 +8,33 @@ import rjs from'../assests/physics.png'
 import nodejs from'../assests/nodejs.png'
 import mysql from'../assests/mysql.png'
 import mongodb from'../assests/icons8-mongodb-48.png'
+import tailwind from "../assests/tailwindcss-logo.png"
+import aws from "../assests/aws.png"
+import { Dna  } from  'react-loader-spinner'
+import {useState , useEffect} from 'react'
+
 function About() {
-  return (
+      const [loading,setLoading]=useState(true);
+      useEffect(() => {
+        const timer = setTimeout(() => {
+          setLoading(false);
+        }, 1000);
+
+        return () => clearTimeout(timer);
+      }, []);
+      return (
+        <>
+        {loading ? (
+          <div className="Dna">
+          <Dna
+          visible={true}
+          height="200"
+          width="200"
+          ariaLabel="dna-loading"
+          wrapperClass="dna-wrapper"
+        />
+        </div>
+        ):(
     <div className='about'>
         <div className='explore'>
           <h1>About</h1>
@@ -20,18 +45,22 @@ function About() {
         <div className='skill'>
             <h1>Skills</h1>
             <ul>
-                <li><img src={html} alt='htlm'/><progress value="95" max="100"></progress>  <span>95%</span></li>
-                <li><img src={css} alt='css'/><progress value="80" max="100"></progress>  <span>80%</span></li>
-                <li><img src={boot} alt='boot'/><progress value="80" max="100"></progress>  <span>80%</span></li>
-                <li><img src={js} alt='javascript'/><progress value="85" max="100"></progress>  <span>85%</span></li>
-                <li><img src={rjs} alt='react'/><progress value="75" max="100"></progress>  <span>75%</span></li>
-                <li><img src={mysql} alt='mysql'/><progress value="50" max="100"></progress>  <span>50%</span></li>
-                <li><img src={mongodb} alt='mongodb'/><progress value="65" max="100"></progress>  <span>65%</span></li>
-                <li><img src={nodejs} alt='nodejs'/><progress value="65" max="100"></progress>  <span>65%</span></li>
+                <li><img src={html} alt='htlm'/></li>
+                <li><img src={css} alt='css'/></li>
+                <li><img src={boot} alt='boot'/></li>
+                <li><img src={js} alt='javascript'/></li>
+                <li><img src={rjs} alt='react'/></li>
+                <li><img src={mysql} alt='mysql'/></li>
+                <li><img src={mongodb} alt='mongodb'/></li>
+                <li><img src={nodejs} alt='nodejs'/></li>
+                <li><img src={tailwind} alt='tailwind'/></li>
+                <li><img src={aws} alt='aws'/></li>
             </ul>
         </div>
     </div>
-  )
+  )}
+</>
+ )
 }
 
 export default About

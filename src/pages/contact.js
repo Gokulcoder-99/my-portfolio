@@ -2,16 +2,27 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import'./contact.css'
-const Contact = () => {
+import { Dna  } from  'react-loader-spinner'
+import {useState , useEffect} from 'react'
 
-  const form = useRef()
- const position =[13.144429 , 80.035699 ]
- 
-
-  const sendEmail = (e) => {
-    e.preventDefault()
-
-    emailjs
+  const Contact = () => {
+    const [loading,setLoading]=useState(true);
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 1000);
+      
+      return () => clearTimeout(timer);
+    }, []);
+    
+    const form = useRef()
+    const position =[13.144429 , 80.035699 ]
+    
+    
+    const sendEmail = (e) => {
+      e.preventDefault()
+      
+      emailjs
       .sendForm('service_xb2xo8a', 'template_sudvqnh', form.current, 'mx-dAhjZR7s4YKcDj')
       .then(
         () => {
@@ -21,11 +32,22 @@ const Contact = () => {
         () => {
           alert('Failed to send the message, please try again')
         }
-      )
-  }
-
-  return (
-    <>
+        )
+      }
+      
+      return (
+        <>
+      {loading ? (
+        <div className="Dna">
+        <Dna
+        visible={true}
+        height="200"
+        width="200"
+        ariaLabel="dna-loading"
+        wrapperClass="dna-wrapper"
+        />
+      </div>
+      ):(
     <div className='contact'>
       <div className="container">
         <div className="text-zone">
@@ -84,7 +106,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      </div>
+      </div>)}
       </>
   )
 }
