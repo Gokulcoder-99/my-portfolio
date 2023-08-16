@@ -34,7 +34,7 @@ function Home() {
                 My name is <br/>Gokulakrishnan.<br/>
                 </h1>
                 <p>I am a Full stack developer(MERN)</p>
-               <a target='_blank'  rel='noreferrer' href='https://drive.google.com/file/d/15uyFfKwGiCiLhk9X5_-VFlNDxmtlKM79/view?usp=sharing' ><button className='btn'>Resume</button></a>
+               <a target='_blank'  rel='noreferrer' href='https://drive.google.com/file/d/1MDxQs8-gjPJCDjbE4Xzw7JTWVhFV--jy/view?usp=sharing' ><button className='btn'>Resume</button></a>
                 <div className='anchor-min'>
                   <ul>
                     <li><a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/gokulakrishnan-k-ab7712169/'><FontAwesomeIcon icon={faLinkedin}/></a></li>
