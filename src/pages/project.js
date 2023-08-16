@@ -49,7 +49,6 @@ function Project() {
       <div className='card'>
         <img className='projectimage' src={admin} alt='admin'/>
         <div className='detail'>
-<<<<<<< HEAD
           <h2>AdminDashboard</h2>
           <p>Admin Dashboard  using React, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid to build this entire application. This application consists of Light and Dark Mode, 4 different Charts, 3 different Data Table Pages, FAQ Page, Form Page, and Calendar Integration.</p>
           <div >
@@ -61,8 +60,7 @@ function Project() {
       <div className='card'>
         <img className='projectimage' src={webscraper} alt='webscraper'/>
         <div className='detail'>
-=======
->>>>>>> ec6e61bf939b3ec2b15484b1e7a1ccdd77a386ba
+
           <h2>Webscraper(HACKATHON)</h2>
           <p>Scrap product data from E-Commerce websites.<br/>
              The scrapping of the data should be done for the following Websites.<br/>
