@@ -9,7 +9,7 @@ import nodejs from'../assests/nodejs.png'
 import mysql from'../assests/mysql.png'
 import mongodb from'../assests/icons8-mongodb-48.png'
 import tailwind from "../assests/tailwindcss-logo.png"
-import aws from "../assests/aws.png"
+// import aws from "../assests/aws.png"
 import { Dna  } from  'react-loader-spinner'
 import {useState , useEffect} from 'react'
 
@@ -54,7 +54,7 @@ function About() {
                 <li><img src={mongodb} alt='mongodb'/></li>
                 <li><img src={nodejs} alt='nodejs'/></li>
                 <li><img src={tailwind} alt='tailwind'/></li>
-                <li><img src={aws} alt='aws'/></li>
+                {/* <li><img src={aws} alt='aws'/></li> */}
             </ul>
         </div>
     </div>
