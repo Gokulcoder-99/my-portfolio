@@ -35,6 +35,7 @@ function Project() {
           <h2>Food token generator for in-house</h2>
           <p>Implemented user authentication, menu management, and token generation. Achieved seamless communication between frontend and backend components. Deployed application on a cloud hosting platform.<br/>
            Key Technologies: MERN Stack, HTML/CSS, JavaScript, Git/GitHub,RESTful APIs <br/>
+           (For admin:gokul@gmail.com   employee:sudha@gmail.com   counter:raj@gmail.com  all password:"Password@1")<br/>
            Achievements:<br/>
            - Streamlined in-house food ordering process with a fully functional token generator.<br/>
            - Implemented secure user authentication and authorization.<br/>
