@@ -1,9 +1,9 @@
 import React from 'react'
 import './project.css'
-import admin from '../assests/projectimage/admin.png'
+import expense from '../assests/projectimage/expense.png'
 import zoro from '../assests/projectimage/zoro.png' 
-import weatherapi from '../assests/projectimage/weatherapi.png'
-import webscraper from '../assests/projectimage/webscraper.png'
+import chatbox from '../assests/projectimage/chatbox.png'
+import netflix from '../assests/projectimage/netflix.png'
 import { Dna  } from  'react-loader-spinner'
 import {useState , useEffect} from 'react'
 function Project() {
@@ -48,45 +48,43 @@ function Project() {
         </div>
       </div>
       <div className='card'>
-        <img className='projectimage' src={admin} alt='admin'/>
+        <img className='projectimage' src={netflix} alt='netflix'/>
         <div className='detail'>
-          <h2>AdminDashboard</h2>
-          <p>Admin Dashboard  using React, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid to build this entire application. This application consists of Light and Dark Mode, 4 different Charts, 3 different Data Table Pages, FAQ Page, Form Page, and Calendar Integration.</p>
+          <h2>Netflix-Clone</h2>
+          <p>
+A Netflix clone built using the MERN (MongoDB, Express.js, React, Node.js) stack is a web application designed to replicate some of the core functionalities of the popular streaming platform, Netflix.
+The MERN stack Netflix clone is a web application that allows users to browse, search for, and watch a collection of movies and TV shows. It simulates the user experience of Netflix, offering features like user authentication, a dynamic homepage with recommended content, a catalog of movies and TV series, and the ability to play selected titles.</p>
           <div >
-          <a target='_blank' rel='noreferrer' href='https://github.com/Gokulcoder-99/react-admin'><button className='pbtn'>FrontEnd</button></a>
-          <a target='_blank' rel='noreferrer' href="https://react-admin-e73s.vercel.app/"><button className='pbtn'>Live</button></a>
+          <a target='_blank' rel='noreferrer' href='https://github.com/Gokulcoder-99/Netflix-Ui'><button className='pbtn'>FrontEnd</button></a>
+          <a target='_blank' rel='noreferrer' href='https://github.com/Gokulcoder-99/Netflix-Server'><button className='pbtn'>BackEnd</button></a>
+          <a target='_blank' rel='noreferrer' href="https://netflix-ui-omega-taupe.vercel.app/"><button className='pbtn'>Live</button></a>
           </div>
         </div>
       </div>
       <div className='card'>
-        <img className='projectimage' src={webscraper} alt='webscraper'/>
+        <img className='projectimage' src={chatbox} alt='chatbox'/>
         <div className='detail'>
 
-          <h2>Webscraper(HACKATHON)</h2>
-          <p>Scrap product data from E-Commerce websites.<br/>
-             The scrapping of the data should be done for the following Websites.<br/>
-              → Flipkart<br/>
-              → Amazon<br/>
-              → Snapdeal<br/>
-              Design a search bar Page and Search button with a logo to display the stored data from the Database in the User Interface.<br/>
-              Autofill requests of the search term from the database should happen simultaneously when the user presses the key in the search bar.<br/>
-              pagination to display the results.<br/>
+          <h2>ChatBox</h2>
+          <p>Chatbox is a versatile chatbox application built using the MERN (MongoDB, Express.js, React, Node.js) stack, designed to facilitate both one-on-one and group conversations. Whether you want to have private conversations with friends or collaborate with colleagues in a team environment, Chatbox offers a seamless and secure messaging experience.
 </p>
           <div >
-          <a target='_blank' rel='noreferrer' href='https://github.com/Gokulcoder-99/webscraper-frontend'><button className='pbtn'>FrontEnd</button></a>
-          <a target='_blank' rel='noreferrer' href="https://github.com/Gokulcoder-99/webscraper-backend"><button className='pbtn'>BackEnd</button></a>
-          <a target='_blank' rel='noreferrer' href="https://webscraper-frontend-xi.vercel.app/"><button className='pbtn'>Live</button></a>
+          <a target='_blank' rel='noreferrer' href='https://github.com/Gokulcoder-99/Chat-UI'><button className='pbtn'>FrontEnd</button></a>
+          <a target='_blank' rel='noreferrer' href="https://github.com/Gokulcoder-99/Chat-Server"><button className='pbtn'>BackEnd</button></a>
+          <a target='_blank' rel='noreferrer' href="https://chat-ui-green-omega.vercel.app/"><button className='pbtn'>Live</button></a>
           </div>
         </div>
       </div>
       <div className='card'>
-        <img className='projectimage' src={weatherapi} alt='weatherapi'/>
+        <img className='projectimage' src={expense} alt='expense'/>
         <div className='detail'>
-          <h2>Weather API</h2>
-          <p>Bootstrap framework to develop a dynamic web application showcasing my proficiency in frontend development and API integration. Integrated a RESTful countries API to provide comprehensive weather information for multiple locations. Implemented a user-friendly interface displaying real-time weather updates, ensuring a seamless and engaging experience for users. This project demonstrated my skills in data visualization, API utilization, and utilizing Bootstrap to create visually appealing and responsive designs.</p>
+          <h2>Expenses_Tracker</h2>
+          <p>ExpenseTracker is a web application built using the MERN stack that helps users track and manage their expenses. It provides a user-friendly interface 
+          for entering expenses, categorizing them, and then visualizing their spending patterns using graphs and charts.</p>
           <div >
-          <a target='_blank' rel='noreferrer' href='https://github.com/Gokulcoder-99/rest-countries-day-18'><button className='pbtn'>FrontEnd</button></a>
-          <a target='_blank' rel='noreferrer' href="https://gokulcoder-99.github.io/rest-countries-day-18/"><button className='pbtn'>Live</button></a>
+          <a target='_blank' rel='noreferrer' href='https://github.com/Gokulcoder-99/exp-ui'><button className='pbtn'>FrontEnd</button></a>
+          <a target='_blank' rel='noreferrer' href='https://github.com/Gokulcoder-99/exp-server'><button className='pbtn'>BackEnd</button></a>
+          <a target='_blank' rel='noreferrer' href="https://exp-ui.vercel.app/"><button className='pbtn'>Live</button></a>
           </div>
         </div>
       </div>
